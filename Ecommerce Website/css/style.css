@@ -1,0 +1,403 @@
+body{
+    background-color: rgba(241, 239, 239, 0.5);
+    margin: 0;
+}
+header{
+    display: grid;
+    grid-template-rows: 70px 80px;
+}
+/* La 1ere partie en header*/
+#top{
+    grid-row: 1/2;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#top img{
+    margin: 0 3%;
+}
+#top span{
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    margin: 0 3%;
+}
+#top a{
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+#top a:hover{
+    text-shadow: 0px 3px 10px white;
+    z-index: 40px;
+    font-size: 19px;
+    transition: .5s;
+}
+
+/* La 2eme partie en header*/
+#bottom{
+    grid-row: 2/3;
+    background-color: white;
+    font-size: 20px;
+}
+#bottom li{
+    float: left;
+    margin: 0 20px;
+    list-style: none;
+}
+#bottom a{
+    color: black;
+    text-decoration: none;
+    padding: 2px;
+}
+#bottom a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: rgb(201, 60, 189);
+    transition: width .3s;
+}
+#bottom a:hover::after{
+    width: 100%;
+}
+.select{
+    border-bottom: 3px solid rgb(201, 60, 189);
+}
+
+/* <Search> :*/
+.form-control:focus {
+    box-shadow: none;
+}
+.form-control-underlined {
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-radius: 0;
+    padding-left: 0;
+}
+.form-control::placeholder {
+    font-size: 0.95rem;
+    color: rgb(201, 60, 189);
+    font-style: italic;
+}
+#bottom svg{
+    color: rgb(201, 60, 189);
+}
+/* </search> */
+
+#bottom ul{
+    padding: 20px 0 0 19.3%;
+}
+
+
+/*La patie slider*/
+#slider{
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 21%;
+}
+.carousel{
+    width: 800px;
+    height:450px;
+}
+#slider .circle{
+    display: inline-block;
+    margin: 10px;
+    margin-top: 9%;
+    transition: all .5s;
+}
+#slider .circle:hover{
+    transform: scale(1.15);
+}
+#slider a{
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid rgb(201, 60, 189);
+}
+#slider h4{
+    margin-top: 30px;
+}
+
+#first_slider{
+    background-color: rgb(211, 211, 211);
+    height:450px;
+}
+#woman{
+    position: absolute;
+    top:8%;
+    left: 15%;
+}
+#woman a, #jacket a{
+    background-color: white;
+    font-weight: bold;
+    padding:7px;
+    border: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.699);
+}
+#woman h3{
+    font-family: cursive;
+}
+#jacket h5, #jacket h1{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#jacket{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    color: white;
+    text-shadow: 2px 2px 10px white;
+}
+#jacket h1{
+    margin-bottom: 30px;
+}
+
+/* La partie Features*/
+main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+#features{
+    grid-column: 1/2;
+    display: block;
+    padding: 30px;
+}
+#features h1{
+    border-bottom: 3px solid rgb(201, 60, 189);
+    font-size: 40px;
+    width: 200px;
+}
+article{
+    border-bottom: 3px solid rgb(201, 60, 189);
+    padding: 10px;
+}
+/* Pour le premier article*/
+#first{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+#first .img{
+    grid-column: 1/2;
+}
+#first .info{
+    grid-column: 2/3;
+}
+/* Pour le deuxieme article*/
+#third{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+#third .img2{
+    grid-column: 2/3;
+}
+
+#third .info2{
+    grid-column: 1/2;
+}
+
+article .carousel{
+    width: 300px;
+    height: 400px;
+}
+article .info, article .info2{
+    margin: auto 0;
+    font-size: 18px;
+}
+article h2{
+    margin: 0 0 30px 0;
+    font-family: cursive;
+}
+article .read_more{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    padding:7px;
+    border: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.699);
+}
+article .share{
+    margin: 30px 0 0 0;
+}
+article .share svg{
+    margin: 10px;
+}
+article  path
+{
+    fill: rgb(201, 60, 189);
+}
+article #deux{
+    margin-left: 310px;
+}
+
+/* la partie du carde*/
+#boxs{
+    padding-top: 50px;
+}
+#boxs .card-body{
+    height: 200px;
+    overflow: auto;
+}
+#boxs h5{
+    font-family: cursive;
+}
+#boxs pre{
+    font-weight: bold;
+}
+#boxs a{
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border: 0;
+    border-bottom: 3px solid rgb(201, 60, 189);
+}
+#boxs .col{
+    transition: all .5s;
+}
+#boxs .col:hover{
+    transform: scale(1.1);
+}
+#boxs .card .image{
+    height: 380px;
+    overflow: hidden;
+}
+
+/* La partie aside */
+aside{
+    grid-column: 2/3;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: rgba(201, 60, 189,0.3);
+    border-radius: 10px;
+    display: block;
+}
+aside h2{
+    font-family: "Gill Sans", sans-serif;
+    border-bottom: 3px solid rgb(201, 60, 189);
+    width: 200px;
+    margin: 5% 0 0 10px;
+}
+aside form{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+aside input{
+    width: 250px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    height: 40px;
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+aside input[type="email"]:focus{
+    border: 1px solid #555;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.699);
+    transform: scale(1.1);
+}
+aside input[type="button"]:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.699);
+}
+aside #trend{
+    display:inline-block;
+    padding-top: 10px;
+}
+aside .ligne{
+    display: flex;
+    margin: 10px 0 0 0;
+}
+aside .object{
+    margin: 10px 0 10px 30px;
+    text-align: center;
+}
+aside img{
+    width: 150px;
+    margin-bottom: 5px;
+}
+.object pre, .object h6{
+    font-weight: bold;
+}
+
+#annonce{
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+#annonce video{
+    border-radius: 5px;
+}
+
+.follow path
+{
+    fill: rgb(201, 60, 189);
+}
+#follow #content{
+    margin: 0 0 0 23px;
+}
+#follow .icon{
+    background-color: white;
+    padding-top: 9px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    float: left;
+    margin: 40px 30px 0 0;
+}
+
+/* Commentaire */
+.left{
+    margin-top: 30px 0 0 10px;
+    border-right: 3px solid rgb(201, 60, 189);
+    text-align: center;
+}
+.left input, .left textarea{
+    margin: 5px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.left input[type="email"]:focus, .left textarea:focus{
+    border: 1px solid #555;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.699);
+    transform: scale(1.1);
+}
+.left input[type="submit"]{
+    width: 100px;
+}
+.left input[type="submit"]:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.699);
+}
+
+.right{
+    overflow: auto;
+    max-height: 200px;
+}
+.right span{
+    font-weight: bold;
+    font-size: 15px;
+}
+.right .comment{
+    background-color: rgba(241, 239, 239, 0.5);
+    margin-top: 5px;
+    padding: 5px;
+}
+.modal-header h4{
+    color: rgb(201, 60, 189);
+}
+.btn-close button{
+    text-shadow: none;
+}
+.modal-footer button{
+    background-color: rgb(201, 60, 189);
+    border: none;
+}
+.modal-footer button:hover{
+    background-color: rgb(201, 60, 189);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.699);
+    border: none;
+}
